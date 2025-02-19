@@ -56,12 +56,13 @@ const SearchField: React.FC<DataTableSearchBoxProps> = ({ onSearch }) => {
       variant="outlined"
       // InputLabelProps={{ style: { padding: "0 10px" } }}
       fullWidth
-       value={searchValue }
+          value={searchValue }
 
       onChange={handleInputChange}
+
       InputProps={{
         endAdornment: (
-          <HtmlTooltip title="Fjern søk " placement="left" TransitionComponent={Zoom}>
+              <HtmlTooltip title="Fjern søk " placement="left" TransitionComponent={Zoom}>
             <InputAdornment position="end">
               <IconButton edge="end" onClick={handleClearInput}>
                 <CloseIcon />
