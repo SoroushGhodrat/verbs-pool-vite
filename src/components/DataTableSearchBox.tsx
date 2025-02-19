@@ -56,7 +56,8 @@ const SearchField: React.FC<DataTableSearchBoxProps> = ({ onSearch }) => {
       variant="outlined"
       // InputLabelProps={{ style: { padding: "0 10px" } }}
       fullWidth
-      value={searchValue}
+       value={searchValue }
+
       onChange={handleInputChange}
       InputProps={{
         endAdornment: (
@@ -65,7 +66,7 @@ const SearchField: React.FC<DataTableSearchBoxProps> = ({ onSearch }) => {
               <IconButton edge="end" onClick={handleClearInput}>
                 <CloseIcon />
               </IconButton>
-            </InputAdornment>
+            </InputAdornment  >
           </HtmlTooltip>
         ),
       }}
