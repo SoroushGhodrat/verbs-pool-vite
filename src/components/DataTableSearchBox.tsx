@@ -62,6 +62,7 @@ const SearchField: React.FC<DataTableSearchBoxProps> = ({ onSearch }) => {
 
       InputProps={{
         endAdornment: (
+          
               <HtmlTooltip title="Fjern søk " placement="left" TransitionComponent={Zoom}>
             <InputAdornment position="end">
               <IconButton edge="end" onClick={handleClearInput}>
